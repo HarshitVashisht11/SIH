@@ -2,9 +2,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 html,body{
     height: 100%;
-    background-color: aqua;
     width: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 54px; 
+    padding: 0 20px; 
+    margin: 0px 20px 20px 20px;
+}
+#left {
+    font-size: 2rem;
+    font-weight: bold; 
+}
+#right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px; 
+}
+
+#right ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#right ul li a {
+    text-decoration: none; 
+    color: black; 
+
+}
+main {
+    padding: 0 20px;
+    margin: 50px 20px;
+
+}
+main h1{
+    font: bold;
+}
+main #left{
+    width: 75vh;
+ }
+
+main #left p{
+    justify-content: space-around;
+}
+main #play {
+    padding: 3vw 2.2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+main a.gradient-button {
+    background: linear-gradient(to bottom, #00ffff, #0099cc);
+    color: white;
+    padding: 15px 30px; /* Increase padding for a larger button */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 5px;
+}
+/* ... (previous CSS code) ... */
+
+#search-container {
+    text-align: center;
+    margin-top: 50px; /* Add margin to center-align the search container */
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add margin to center-align the search bar */
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background: linear-gradient(to bottom, #00ffff, #0099cc);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

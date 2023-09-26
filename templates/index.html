@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Price Comparison</title>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
-        <h1>Price Comparison</h1>
+    <nav>
+        <div id="left">Gem-Compare</div>
+        <div id="right">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Login</a></li>
+            <li><a href="/">Signup</a></li>
+        </ul>
+         </div>   
+    </nav>
     </header>
     <main>
-        <form id="priceComparisonForm">
-            <label for="websiteUrls">Enter Website URLs (comma-separated):</label>
-            <input type="text" id="websiteUrls" name="websiteUrls" required>
-            <button type="submit">Compare Prices</button>
-        </form>
-        <div id="priceComparisonResults">
+        <div id="play">PLAY</div>
+        <div id="left">
+            <h1>Welcome to </h1>
+            <h1>GeM-Compare</h1>
+            <p>
+            A Tool that can give Realtime GeM product Detail and can Compare different Prices
+            </p>   
+            <a href="/main" class="gradient-button">Get Started</a>         
+        </div>
+        <div id="right">   
         </div>
     </main>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

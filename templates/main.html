@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="left" class="nav-title">Gem-Compare</div>
+            <div id="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Login</a></li>
+                    <li><a href="/">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="search-container">
+            <h2>Search the Product</h2>
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Type a URL...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </main>
+    <!-- ... (rest of the HTML) ... -->
+</body>
+</html>
