@@ -24,21 +24,34 @@
          </div>   
     </nav>
     </header>
-    <main>
-        <div id="play">PLAY</div>
-        <div id="left">
-            <h1>Welcome to </h1>
-            <h1>GeM-Compare</h1>
-            <p>
-            A Tool that can give Realtime GeM product Detail and can Compare different Prices
-            </p>   
-            <a href="/main" class="gradient-button">Get Started</a>         
-        </div>
-        <div id="right">   
-        </div>
+        <main>
+            <div id="cursor">
+                <div id="play">PLAY</div>
+                <div id="content">
+                    <div id="left">
+                        <h1>Welcome to </h1>
+                        <h1>GeM-Compare</h1>
+                        <p>
+                        A Tool that
+                        <span id="element"></span>
+                        </p>   
+                        <a href="/main" class="gradient-button">Get Started</a>         
+                    </div>
+                    <div id="right">
+                        <img id="rotating-image" src="{{ url_for('static', filename='images/sofa1.avif') }}" alt="Gem-Compare Image">
+                    </div>
+                </div>
+            </div>        
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['can give Real Time Product Price.', ' can Compare Price with Popular E-commerce Sites.','&amp; much more..'],
+        typeSpeed: 50, loop,
+      });
+    </script>
 </body>
 </html>
