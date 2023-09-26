@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Price Comparison</h1>
+    </header>
+    <main>
+        <form id="priceComparisonForm">
+            <label for="websiteUrls">Enter Website URLs (comma-separated):</label>
+            <input type="text" id="websiteUrls" name="websiteUrls" required>
+            <button type="submit">Compare Prices</button>
+        </form>
+        <div id="priceComparisonResults">
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
